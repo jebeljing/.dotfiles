@@ -18,6 +18,10 @@ brew install \
   node \
   openssh
 
+# install iterm2
+brew install --cask iterm2
+
+
 /opt/homebrew/opt/fzf/install
 set rtp+=/opt/homebrew/opt/fzf
 
