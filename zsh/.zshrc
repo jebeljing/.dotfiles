@@ -10,13 +10,19 @@ fi
 export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
+export VIMCONFIG=~/.config/nvim
+
 source ~/.zsh_plugins.sh
 
 # aliases
-alias ls="ls -la"
+alias ls="ls -la --color"
 alias vi="nvim"
+alias cat="bat"
+alias vimrc="cd ${VIMCONFIG}"
+
+export BAT_THEME="gruvbox-dark"
+export CLICOLOR=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export VIMCONFIG=~/.config/nvim
