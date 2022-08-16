@@ -108,7 +108,7 @@ return require('packer').startup(function()
       tag = 'v2.*',
       config = function()
         require('bufferline').setup(
-          require('plugin-configs.bufferline-config')
+          require('bufferline-config')
         )
       end
     })
