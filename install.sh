@@ -21,11 +21,15 @@ brew install \
 # install iterm2
 brew install --cask iterm2
 
+# install lazygit
+brew install jesseduffield/lazygit/lazygit
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Remove the .zshrc from oh-my-zsh
 rm ~/.zshrc
 
-# install lazygit
-brew install jesseduffield/lazygit/lazygit
 
 /opt/homebrew/opt/fzf/install
 set rtp+=/opt/homebrew/opt/fzf
@@ -42,5 +46,8 @@ stow tmux
 #sudo chsh -s $(which zsh) $USER # Don't need this since it's the default for new macOS
 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+
+# Install gem packages
+gem install --user-install solargraph
 
 
