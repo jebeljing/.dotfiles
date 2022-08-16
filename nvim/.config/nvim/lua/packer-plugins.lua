@@ -5,7 +5,7 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
 
     -- colorscheme
-    use 'gruvbox-community/gruvbox'
+    use 'ellisonleao/gruvbox.nvim'
 
     use 'tpope/vim-unimpaired'
 
@@ -13,8 +13,6 @@ return require('packer').startup(function()
 
     use 'tpope/vim-commentary'
 
-    use {'glepnir/dashboard-nvim'}
-    
     use {
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
@@ -28,7 +26,7 @@ return require('packer').startup(function()
 
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 
-    use 'hrsh7th/nvim-cmp'
+    --use 'hrsh7th/nvim-cmp'
 
     use({
         "glepnir/lspsaga.nvim",
@@ -55,6 +53,9 @@ return require('packer').startup(function()
         requires = {
             'kyazdani42/nvim-web-devicons',
         },
+        config = function()
+          require("nvim-tree").setup()
+        end
     }
 
     use {
@@ -94,9 +95,11 @@ return require('packer').startup(function()
     }
 
     use {
-        'windwp/nvim-autopairs',
-        config = function()
-            require('nvim-autopairs').setup {}
-        end
+      'tpope/vim-endwise'
     }
+
+    -- use {
+    --   "jose-elias-alvarez/null-ls.nvim",
+    --   requires = { "nvim-lua/plenary.nvim" },
+    --   }
 end)
