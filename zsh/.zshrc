@@ -26,6 +26,7 @@ alias vim="nvim"
 alias cat="bat"
 alias vimrc="cd ${VIMCONFIG}"
 alias lg="lazygit"
+alias uw="cd ~/code/upstart_web"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
