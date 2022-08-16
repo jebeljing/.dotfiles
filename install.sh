@@ -21,6 +21,8 @@ brew install \
 # install iterm2
 brew install --cask iterm2
 
+# install lazygit
+brew install jesseduffield/lazygit/lazygit
 
 /opt/homebrew/opt/fzf/install
 set rtp+=/opt/homebrew/opt/fzf

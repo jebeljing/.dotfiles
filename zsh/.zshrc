@@ -22,6 +22,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias cat="bat"
 alias vimrc="cd ${VIMCONFIG}"
+alias lg="lazygit"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
