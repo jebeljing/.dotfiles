@@ -21,6 +21,9 @@ brew install \
 # install iterm2
 brew install --cask iterm2
 
+# Remove the .zshrc from oh-my-zsh
+rm ~/.zshrc
+
 # install lazygit
 brew install jesseduffield/lazygit/lazygit
 
