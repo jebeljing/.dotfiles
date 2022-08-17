@@ -64,16 +64,6 @@ return require('packer').startup(function()
     }
 
     use {
-        'akinsho/bufferline.nvim',
-        requires = 'kyazdani42/nvim-web-devicons',
-	config = function()
-            require("bufferline").setup{
-
-	    }
-        end
-    }
-
-    use {
         'lewis6991/gitsigns.nvim',
         config = function()
             require('gitsigns').setup()
@@ -104,13 +94,7 @@ return require('packer').startup(function()
 
     use({
       'akinsho/bufferline.nvim',
-      event = "BufWinEnter",
-      tag = 'v2.*',
-      config = function()
-        require('bufferline').setup(
-          require('bufferline-config')
-        )
-      end
+      tag = 'v2.*'
     })
     
     -- comment
@@ -143,6 +127,14 @@ return require('packer').startup(function()
         require('nvim-autopairs').setup()
       end
     })
+
+    use {
+      "tpope/vim-rails"
+    }
+
+    use {
+      'thoughtbot/vim-rspec'
+    }
     -- use {
     --   "jose-elias-alvarez/null-ls.nvim",
     --   requires = { "nvim-lua/plenary.nvim" },

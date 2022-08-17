@@ -17,3 +17,8 @@ vim.keymap.set("i", "<left>", "<nop>", opt)
 vim.keymap.set("i", "<right>", "<nop>", opt)
 
 vim.keymap.set("n", "<Leader>lg", ":LazyGit<CR>", opt)
+
+vim.keymap.set("n", "<Leader>t", ":call RunCurrentSpecFile()<CR>", opt)
+vim.keymap.set("n", "<Leader>s", ":call RunNearestSpec()<CR>", opt)
+vim.keymap.set("n", "<Leader>l", ":call RunLastSpec()<CR>", opt)
+vim.keymap.set("n", "<Leader>a", ":call RunAllSpec()<CR>", opt)
