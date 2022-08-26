@@ -27,6 +27,8 @@ alias cat="bat"
 alias vimrc="cd ${VIMCONFIG}"
 alias lg="lazygit"
 alias uw="cd ~/code/upstart_web"
+alias mycode="cd ~/code"
+alias cls="clear"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
@@ -42,17 +44,34 @@ export PATH="$PATH:/Users/jingshan.yin/.local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-login() {
-  aws-sso-util logout
-  aws-sso-util login
-  exportCreds
-}
-
-exportCreds() {
-  aws-export-credentials --profile sandbox --credentials-file-profile sandbox;
-}
+# login() {
+#   aws-sso-util logout
+#   aws-sso-util login --profile playground
+#   aws-sso-util login --profile staging
+#   aws-sso-util login --profile production
+#
+#   exportCreds
+# }
+#
+# exportCreds() {
+#   aws-export-credentials --profile staging --credentials-file-profile staging
+#   aws-export-credentials --profile production --credentials-file-profile production
+#   aws-export-credentials --profile playground --credentials-file-profile playground
+# }
 
 export PATH=$PATH:/Users/jingshan.yin/.gem/ruby/2.7.0/bin
+
+# for aws-sso-util
+# _AWS_SSO_UTIL_COMPLETE_SCRIPT_DIR=~/.local/share/aws-sso-util
+# _AWS_SSO_UTIL_COMPLETE_SCRIPT=$_AWS_SSO_UTIL_COMPLETE_SCRIPT_DIR/complete.sh
+# if which aws-sso-util > /dev/null; then
+#   mkdir -p $_AWS_SSO_UTIL_COMPLETE_SCRIPT_DIR
+#   ({ _AWS_SSO_UTIL_COMPLETE=zsh_source aws-sso-util > $_AWS_SSO_UTIL_COMPLETE_SCRIPT.tmp ;
+#     mv $_AWS_SSO_UTIL_COMPLETE_SCRIPT.tmp $_AWS_SSO_UTIL_COMPLETE_SCRIPT; } &)
+#   if [ -f $_AWS_SSO_UTIL_COMPLETE_SCRIPT ]; then
+#     source $_AWS_SSO_UTIL_COMPLETE_SCRIPT
+#   fi
+# fi
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh

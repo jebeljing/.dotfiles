@@ -21,3 +21,5 @@ o.colorcolumn="120"
 
 o.showcmd=true
 o.ruler=true
+
+o.cursorline=true
