@@ -52,4 +52,8 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 # Install gem packages
 gem install --user-install solargraph
 
+# install tsserver
+npm install -g typescript typescript-language-server
 
+# install pyright
+npm install -g pyright
