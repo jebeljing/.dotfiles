@@ -1,0 +1,5 @@
+[user]
+	email = jingshan.yin@upstart.com
+	name = jingshanyin
+[core]
+	excludesfile = /Users/jingshan.yin/.gitignore_global

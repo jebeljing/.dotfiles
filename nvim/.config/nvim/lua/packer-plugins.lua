@@ -64,10 +64,7 @@ return require('packer').startup(function()
     }
 
     use {
-        'lewis6991/gitsigns.nvim',
-        config = function()
-            require('gitsigns').setup()
-        end
+        'lewis6991/gitsigns.nvim'
     }
 
     use {
@@ -145,6 +142,7 @@ return require('packer').startup(function()
     use { 'hrsh7th/cmp-vsnip' }
     use { 'hrsh7th/vim-vsnip' }
 
+    use "jose-elias-alvarez/null-ls.nvim"
     -- use {
     --   "jose-elias-alvarez/null-ls.nvim",
     --   requires = { "nvim-lua/plenary.nvim" },

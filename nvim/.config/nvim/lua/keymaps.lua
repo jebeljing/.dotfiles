@@ -23,3 +23,23 @@ vim.keymap.set("n", "<Leader>t", ":call RunCurrentSpecFile()<CR>", opt)
 vim.keymap.set("n", "<Leader>s", ":call RunNearestSpec()<CR>", opt)
 vim.keymap.set("n", "<Leader>l", ":call RunLastSpec()<CR>", opt)
 vim.keymap.set("n", "<Leader>a", ":call RunAllSpec()<CR>", opt)
+
+-- trouble nvim
+vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
+  {silent = true, noremap = true}
+)

@@ -44,6 +44,8 @@ export PATH="$PATH:/Users/jingshan.yin/.local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+AUTO_NOTIFY_IGNORE+=("lg", "lazygit")
+
 # login() {
 #   aws-sso-util logout
 #   aws-sso-util login --profile playground
