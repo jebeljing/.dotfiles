@@ -91,38 +91,18 @@ return require('packer').startup(function()
 
     use({
       'akinsho/bufferline.nvim',
-      tag = 'v2.*'
+      tag = 'v2.*',
+      requires = 'kyazdani42/nvim-web-devicons'
     })
     
-    -- comment
-    use({
-      'numToStr/Comment.nvim',
-      event = 'BufWinEnter',
-      config = function()
-        require('Comment').setup()
-      end
-    })
-
     -- blankline
     use({
       'lukas-reineke/indent-blankline.nvim',
-      event = 'BufWinEnter',
-      config = function()
-        require('indent_blankline').setup {
-          show_current_context = true,
-          show_current_context_start = true,
-          show_end_of_line = true,
-        }
-      end
     })
 
     use({
       'windwp/nvim-autopairs',
-      event = 'BufWinEnter',
       requires = { { 'hrsh7th/nvim-cmp' } },
-      config = function()
-        require('nvim-autopairs').setup()
-      end
     })
 
     use {
@@ -142,9 +122,8 @@ return require('packer').startup(function()
     use { 'hrsh7th/cmp-vsnip' }
     use { 'hrsh7th/vim-vsnip' }
 
-    use "jose-elias-alvarez/null-ls.nvim"
-    -- use {
-    --   "jose-elias-alvarez/null-ls.nvim",
-    --   requires = { "nvim-lua/plenary.nvim" },
-    --   }
+    use {
+      "jose-elias-alvarez/null-ls.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+    }
 end)
