@@ -38,6 +38,8 @@ set rtp+=/opt/homebrew/opt/fzf
 stow zsh
 stow nvim
 stow tmux
+stow git
+stow p10k
 
 # add zsh to valid login shells
 #command -v zsh | sudo tee -a /etc/shells # Don't need this since zsh already in the list
