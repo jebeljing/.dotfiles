@@ -1,15 +1,5 @@
-return function()
-	local saga = require 'lspsaga'
+local saga = require("lspsaga")
 
-	-- change the lsp symbol kind
-	local kind = require('lspsaga.lspkind')
-	kind[type_number][2] = icon -- see lua/lspsaga/lspkind.lua
-
-	-- use default config
-	saga.init_lsp_saga()
-
-	-- use custom config
-	saga.init_lsp_saga({
-	    -- put modified options in there
-	})
-end
+saga.init_lsp_saga({
+    -- your configuration
+})
