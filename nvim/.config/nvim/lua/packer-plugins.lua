@@ -32,6 +32,7 @@ return require('packer').startup(function()
         "glepnir/lspsaga.nvim",
         branch = "main",
     })
+    -- use { 'kkharji/lspsaga.nvim' }  -- nightly
 
     use {
         "folke/trouble.nvim",
