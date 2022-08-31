@@ -23,3 +23,4 @@ o.showcmd=true
 o.ruler=true
 
 o.cursorline=true
+o.autoread=true

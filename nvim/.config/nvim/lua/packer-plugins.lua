@@ -122,8 +122,8 @@ return require('packer').startup(function()
     use { 'hrsh7th/cmp-vsnip' }
     use { 'hrsh7th/vim-vsnip' }
 
-    -- use {
-    --   "jose-elias-alvarez/null-ls.nvim",
-    --   requires = { "nvim-lua/plenary.nvim" },
-    -- }
+    use {
+      "jose-elias-alvarez/null-ls.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+    }
 end)
