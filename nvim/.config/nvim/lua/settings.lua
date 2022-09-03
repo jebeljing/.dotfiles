@@ -1,26 +1,37 @@
-local o = vim.opt
+local o = vim.o
+local opt = vim.opt
+local wo = vim.wo
 -- https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/
 -- Indention Option
-o.autoindent = true
 
-o.relativenumber = true
-o.number = true
+opt.relativenumber = true
+opt.number = true
 
-o.tabstop=2
-o.shiftwidth=2
-o.softtabstop=2
-o.expandtab=true
-o.shiftround=false
-o.smarttab=true
+opt.tabstop=2
+opt.shiftwidth=2
+opt.softtabstop=2
+opt.expandtab=true
+opt.shiftround=false
+opt.smarttab=true
+opt.smartindent=true
+opt.autoindent=true
 
-o.hlsearch=true
-o.incsearch=true
-o.ignorecase=true
---o.linespace=1
-o.colorcolumn="120"
+o.splitright=true
+o.splitbelow=true
 
-o.showcmd=true
-o.ruler=true
+opt.hlsearch=true
+opt.incsearch=true
+opt.ignorecase=true
+--opt.linespace=1
+opt.colorcolumn="120"
 
-o.cursorline=true
-o.autoread=true
+opt.showcmd=true
+opt.ruler=true
+
+opt.cursorline=true
+opt.autoread=true
+
+opt.timeoutlen = 500
+
+o.hidden=true
+wo.wrap=true
