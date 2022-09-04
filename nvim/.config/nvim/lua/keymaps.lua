@@ -44,3 +44,11 @@ vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>",
 vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
   {silent = true, noremap = true}
 )
+-- place this in one of your configuration file(s)
+-- for hop plugin
+vim.api.nvim_set_keymap('', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>", {})
+vim.api.nvim_set_keymap('', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>", {})
+vim.api.nvim_set_keymap('', 't', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<cr>", {})
+vim.api.nvim_set_keymap('', 'T', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>", {})
+vim.api.nvim_set_keymap('', '<leader>hw', ":HopWord<CR>", opt)
+vim.api.nvim_set_keymap('', '<leader>hl', ":HopLine<CR>", opt)
