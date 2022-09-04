@@ -109,6 +109,10 @@ return require('packer').startup(function()
       "tpope/vim-rails"
     }
 
+    use {
+      "tpope/vim-rake"
+    }
+
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/cmp-path' }
