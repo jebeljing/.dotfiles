@@ -19,10 +19,11 @@ vim.keymap.set("i", "<right>", "<nop>", opt)
 
 vim.keymap.set("n", "<Leader>lg", ":LazyGit<CR>", opt)
 
-vim.keymap.set("n", "<Leader>t", ":call RunCurrentSpecFile()<CR>", opt)
-vim.keymap.set("n", "<Leader>s", ":call RunNearestSpec()<CR>", opt)
-vim.keymap.set("n", "<Leader>l", ":call RunLastSpec()<CR>", opt)
-vim.keymap.set("n", "<Leader>a", ":call RunAllSpec()<CR>", opt)
+vim.keymap.set("n", "<Leader>t", ":TestNearest<CR>", opt)
+vim.keymap.set("n", "<Leader>T", ":TestFile<CR>", opt)
+vim.keymap.set("n", "<Leader>a", ":TestSuite<CR>", opt)
+vim.keymap.set("n", "<Leader>l", ":TestLast<CR>", opt)
+vim.keymap.set("n", "<Leader>g", ":TestVisit<CR>", opt)
 
 -- trouble nvim
 vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",

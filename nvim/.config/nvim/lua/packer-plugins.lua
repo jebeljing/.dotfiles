@@ -109,10 +109,6 @@ return require('packer').startup(function()
       "tpope/vim-rails"
     }
 
-    use {
-      'thoughtbot/vim-rspec'
-    }
-
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/cmp-path' }
@@ -147,5 +143,9 @@ return require('packer').startup(function()
 
     use {
       "williamboman/nvim-lsp-installer",
-      }
+    }
+
+    use {
+      'vim-test/vim-test'
+    }
 end)
