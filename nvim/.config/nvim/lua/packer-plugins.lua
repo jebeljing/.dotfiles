@@ -175,4 +175,6 @@ return require('packer').startup(function()
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
+
+    use { 'RRethy/nvim-treesitter-endwise' }
 end)
