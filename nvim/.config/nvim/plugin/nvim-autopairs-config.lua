@@ -1,3 +1,7 @@
+local Rule = require('nvim-autopairs.rule')
+local npairs = require('nvim-autopairs')
+npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
+
 require("nvim-autopairs").setup ({
    disable_filetype = { "TelescopePrompt" },
    disable_in_macro = false,  -- disable when recording or executing a macro,
@@ -16,6 +20,7 @@ require("nvim-autopairs").setup ({
    map_c_h = false,  -- Map the <C-h> key to delete a pair
    map_c_w = false,-- map <c-w> to delete a pair if possible
 })
+
 
 require("nvim-treesitter.configs").setup {
   endwise = {
