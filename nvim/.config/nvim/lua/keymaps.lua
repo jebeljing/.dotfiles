@@ -17,7 +17,8 @@ vim.keymap.set("i", "<up>", "<nop>", opt)
 vim.keymap.set("i", "<down>", "<nop>", opt)
 vim.keymap.set("i", "<left>", "<nop>", opt)
 vim.keymap.set("i", "<right>", "<nop>", opt)
-
+-- vim.keymap.set("i", "<Tab>", "<Plug>(vsnip-jump-next)", {})
+--
 vim.keymap.set("n", "<Leader>lg", ":LazyGit<CR>", opt)
 
 vim.keymap.set("n", "<Leader>t", ":TestNearest<CR>", opt)
@@ -53,68 +54,4 @@ vim.api.nvim_set_keymap('', 't', "<cmd>lua require'hop'.hint_char1({ direction =
 vim.api.nvim_set_keymap('', 'T', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>", {})
 vim.api.nvim_set_keymap('', '<leader>hw', ":HopWord<CR>", opt)
 vim.api.nvim_set_keymap('', '<leader>hl', ":HopLine<CR>", opt)
-
--- NOTE: You can use other key to expand snippet.
-
--- Expand
--- keymap("i", "<expr> <C-j> vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'", {})
--- keymap("s", "<expr> <C-j>",  "vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'", {})
---
--- --Expand or jump
--- keymap("i", "<expr> <C-l>",   "vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'", {})
--- keymap("s", "<expr> <C-l>",   "vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'", {})
---
--- -- Jump forward or backward
--- keymap("i", "<expr> <Tab>",   "vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'", {})
--- keymap("s", "<expr> <Tab>",   "vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'", {})
--- keymap("i", "<expr> <S-Tab>", "vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'", {})
--- keymap("s", "<expr> <S-Tab>", "vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'", {})
---
--- -- Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
--- -- See https://github.com/hrsh7th/vim-vsnip/pull/50
--- keymap("n", "s" ,  "<Plug>(vsnip-select-text)", {})
--- keymap("x", "s" ,  "<Plug>(vsnip-select-text)", {})
--- keymap("n", "S",   "<Plug>(vsnip-cut-text)", {})
--- keymap("x", "S",   "<Plug>(vsnip-cut-text)", {})
-
--- If you want to use snippet for multiple filetypes, you can `g:vsnip_filetypes` for it.
--- let g:vsnip_filetypes = {}
--- let g:vsnip_filetypes.javascriptreact = ['javascript']
--- let g:vsnip_filetypes.typescriptreact = ['typescript']
---
-vim.api.nvim_command([[
-" NOTE: You can use other key to expand snippet.
-
-" Expand
-imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-
-" Expand or jump
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-
-" Jump forward or backward
-imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
-smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
-
-" Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
-" See https://github.com/hrsh7th/vim-vsnip/pull/50
-nmap        s   <Plug>(vsnip-select-text)
-xmap        s   <Plug>(vsnip-select-text)
-nmap        S   <Plug>(vsnip-cut-text)
-xmap        S   <Plug>(vsnip-cut-text)
-
-" If you want to use snippet for multiple filetypes, you can `g:vsnip_filetypes` for it.
-let g:vsnip_filetypes = {}
-let g:vsnip_filetypes.javascriptreact = ['javascript']
-let g:vsnip_filetypes.typescriptreact = ['typescript']
-let g:vsnip_filetypes.ruby = ['ruby']
-]])
-
-
-
-
-
 
