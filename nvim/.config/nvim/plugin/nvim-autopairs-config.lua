@@ -1,6 +1,5 @@
 local Rule = require('nvim-autopairs.rule')
 local npairs = require('nvim-autopairs')
-npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
 
 require("nvim-autopairs").setup ({
    disable_filetype = { "TelescopePrompt" },
@@ -21,6 +20,8 @@ require("nvim-autopairs").setup ({
    map_c_w = false,-- map <c-w> to delete a pair if possible
 })
 
+
+npairs.add_rules(require('nvim-autopairs.rules.endwise-ruby'))
 
 require("nvim-treesitter.configs").setup {
   endwise = {
