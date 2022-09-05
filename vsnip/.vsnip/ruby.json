@@ -1,0 +1,14 @@
+{
+  "rspec": {
+    "scope": "ruby",
+    "prefix": "rspec",
+    "body": [
+      "Rspec.describe $1, owner: pre_origination, squad: :verifications_decisions do",
+      "",
+      "\tdescribe \"$2\" do",
+      "\tend",
+      "end"
+    ],
+    "description": "Rspec test snip"
+  }
+}
