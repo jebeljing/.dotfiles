@@ -29,6 +29,7 @@ alias lg="lazygit"
 alias uw="cd ~/code/upstart_web"
 alias mycode="cd ~/code"
 alias cls="clear"
+alias dot="cd ~/.dotfiles"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
