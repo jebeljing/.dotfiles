@@ -25,6 +25,7 @@ return require('packer').startup(function()
         run = ':TSUpdate'
     }
 
+    use 'nvim-treesitter/nvim-treesitter-context'
 
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 
