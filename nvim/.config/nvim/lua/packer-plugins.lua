@@ -180,4 +180,7 @@ return require('packer').startup(function()
     use { 'RRethy/nvim-treesitter-endwise' }
 
     use { 'luochen1990/rainbow' }
+
+
+    use { 'chentoast/marks.nvim' }
 end)
