@@ -26,9 +26,7 @@ saga.init_lsp_saga({
   -- diagnostics_header = { "🙀", "😿", "😾", "😺" },
 
   -- show diagnostic source
-  show_diagnostic_source = true,
   -- add bracket or something with diagnostic source, just have 2 elements
-  diagnostic_source_bracket = {},
   -- preview lines of lsp_finder and definition preview
   max_preview_lines = 10,
   -- use emoji lightbulb in default
@@ -56,7 +54,6 @@ saga.init_lsp_saga({
   -- you may need to increase this value
   finder_request_timeout = 1500,
   -- set antoher colorscheme in preview window
-  finder_preview_hl_ns = 0,
   finder_action_keys = {
       open = "o",
       -- vsplit = "s",
@@ -65,8 +62,6 @@ saga.init_lsp_saga({
       split = "s",
       tabe = "t",
       quit = "q",
-      scroll_down = "<C-f>",
-      scroll_up = "<C-b>", -- quit can be a table
   },
   code_action_keys = {
       quit = "q",
@@ -74,7 +69,6 @@ saga.init_lsp_saga({
   },
   rename_action_quit = "<C-c>",
   rename_in_select = true,
-  definition_preview_icon = "  ",
   -- show symbols in winbar must nightly
   symbol_in_winbar = {
       in_custom = false,
