@@ -3,6 +3,8 @@ local keymap = vim.api.nvim_set_keymap
 
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true })
 
+keymap('n', '<C-L>', ':nohl<CR><C-L>', { noremap = true })
+
 -- vim.keymap.set('n', '<leader>ff', "<cmd>Telescope git_files<cr>", { noremap = true })
 vim.keymap.set('n', '<leader>fg', "<cmd>Telescope live_grep<cr>", { noremap = true })
 vim.keymap.set('n', '<leader>fb', "<cmd>Telescope buffers<cr>", { noremap = true })
