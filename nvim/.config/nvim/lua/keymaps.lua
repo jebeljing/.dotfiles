@@ -14,6 +14,7 @@ vim.keymap.set('n', '<leader>fr', "<cmd>Telescope oldfiles<CR>", opt)
 --vim.api.nvim_set_keymap("n", "<Leader><Space>", "<CMD>lua require'telescope-config'.project_files()<CR>", {noremap = true, silent = true})
 
 vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeFindFileToggle<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>m', '<cmd>NvimTreeFindFile<cr>', { noremap = true })
 
 vim.keymap.set("i", "<up>", "<nop>", opt)
 vim.keymap.set("i", "<down>", "<nop>", opt)
