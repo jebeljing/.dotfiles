@@ -76,6 +76,7 @@ export PATH=$PATH:/Users/jingshan.yin/.gem/ruby/2.7.0/bin
 #     source $_AWS_SSO_UTIL_COMPLETE_SCRIPT
 #   fi
 # fi
+export PATH="/Users/jingshan.yin/code/verifications-backing-services/bin":$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
