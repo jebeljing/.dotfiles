@@ -183,4 +183,21 @@ return require('packer').startup(function()
 
 
     use { 'chentoast/marks.nvim' }
+
+    use {
+      "nvim-neotest/neotest",
+      requires = {
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
+        "olimorris/neotest-rspec",
+        "nvim-neotest/neotest-plenary",
+        "nvim-neotest/neotest-python",
+        "antoinemadec/FixCursorHold.nvim"
+      }
+    }
+
+
+
+
+
 end)
