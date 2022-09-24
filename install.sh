@@ -47,6 +47,9 @@ brew install --cask appcleaner
 # install rectangle
 brew install --cask rectangle
 
+# install bartender
+brew install --cask bartender
+
 # install lazygit
 brew install jesseduffield/lazygit/lazygit
 
