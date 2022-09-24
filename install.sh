@@ -21,6 +21,32 @@ brew install \
 # install iterm2
 brew install --cask iterm2
 
+# install alfred
+brew install --cask alfred
+
+# install AltTab
+brew install --cask alt-tab
+
+# install dropzone
+brew install --cask dropzone
+
+# Amphetamine need to be installed manually
+# in appstore
+
+# Timer: install on app store: be focused
+
+# install MonitorControl
+brew install --cask monitorcontrol
+
+# install numi
+brew install --cask numi
+
+# install appCleaner
+brew install --cask appcleaner
+
+# install rectangle
+brew install --cask rectangle
+
 # install lazygit
 brew install jesseduffield/lazygit/lazygit
 
