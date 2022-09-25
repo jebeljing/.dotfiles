@@ -18,6 +18,9 @@ brew install \
   node \
   openssh
 
+# install tmuxinator
+brew install tmuxinator
+
 # install iterm2
 brew install --cask iterm2
 
