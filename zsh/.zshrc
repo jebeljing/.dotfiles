@@ -31,6 +31,7 @@ alias aps="cd ~/code/approval_service"
 alias mycode="cd ~/code"
 alias cls="clear"
 alias dot="cd ~/.dotfiles"
+alias mux="tmuxinator start upstart"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
@@ -77,6 +78,7 @@ export PATH=$PATH:/Users/jingshan.yin/.gem/ruby/2.7.0/bin
 #   fi
 # fi
 export PATH="/Users/jingshan.yin/code/verifications-backing-services/bin":$PATH
+export EDITOR='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
