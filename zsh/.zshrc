@@ -32,6 +32,9 @@ alias mycode="cd ~/code"
 alias cls="clear"
 alias dot="cd ~/.dotfiles"
 alias mux="tmuxinator start upstart"
+alias udi="umt dap interactive"
+alias udcp="umt dap create -e upstart-web-prod -r 'jingshan' --exec"
+alias udcs="umt dap create -e upstart-web-staging-1 -r 'jingshan' --exec"
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
