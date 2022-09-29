@@ -34,7 +34,11 @@ alias dot="cd ~/.dotfiles"
 alias mux="tmuxinator start upstart"
 alias udi="umt dap interactive"
 alias udcp="umt dap create -e upstart-web-prod -r 'jingshan' --exec"
+alias udep="umt dap exec -e upstart-web-prod"
 alias udcs="umt dap create -e upstart-web-staging-1 -r 'jingshan' --exec"
+alias udes="umt dap exec -e upstart-web-staging-1"
+alias fix="bundle exec rubocop -A"
+
 
 export BAT_THEME="gruvbox-dark"
 export CLICOLOR=1
