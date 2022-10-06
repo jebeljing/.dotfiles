@@ -1,6 +1,8 @@
 require('telescope').setup{
   defaults = {
     layout_strategy = 'cursor',
+    layout_config = {
+    },
     sorting_strategy = 'ascending',
     -- Default configuration for telescope goes here:
     -- config_key = value,
