@@ -11,6 +11,7 @@ vim.keymap.set('n', '<leader>fb', "<cmd>Telescope buffers<cr>", { noremap = true
 vim.keymap.set('n', '<leader>fh', "<cmd>Telescope help_tags<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<Leader>ff", "<CMD>lua require'telescope-config'.project_files()<CR>", {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>fr', "<cmd>Telescope oldfiles<CR>", opt)
+vim.keymap.set('n', '<leader>fl', "<cmd>Telescope resume<CR>", opt)
 
 vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeFindFileToggle<cr>', { noremap = true })
 vim.keymap.set('n', '<leader>m', '<cmd>NvimTreeFindFile<cr>', { noremap = true })

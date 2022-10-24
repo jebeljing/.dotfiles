@@ -198,6 +198,10 @@ return require('packer').startup(function()
       }
     }
 
+    use {
+      "martinda/Jenkinsfile-vim-syntax"
+    }
+
 
 
 
