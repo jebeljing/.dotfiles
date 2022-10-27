@@ -5,7 +5,8 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
 
     -- colorscheme
-    use 'ellisonleao/gruvbox.nvim'
+    -- use 'ellisonleao/gruvbox.nvim'
+    use 'sainnhe/gruvbox-material'
 
     use 'tpope/vim-unimpaired'
 
