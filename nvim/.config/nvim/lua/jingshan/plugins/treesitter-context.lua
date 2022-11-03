@@ -1,4 +1,9 @@
-require'treesitter-context'.setup{
+-- import treesitter-context safely
+local status, treesittercontext= pcall(require, "treesitter-context")
+if not autopairs_setup then
+	return
+end
+treesittercontext.setup{
     enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
     max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
     trim_scope = 'outer', -- Which context lines to discard if `max_lines` is exceeded. Choices: 'inner', 'outer'
