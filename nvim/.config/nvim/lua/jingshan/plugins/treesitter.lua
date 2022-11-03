@@ -31,7 +31,7 @@ treesitter.setup({
     "ruby",
     "java",
     "python",
-    "kotlin"
+    "kotlin",
 	},
 	-- auto install above language parsers
 	auto_install = true,

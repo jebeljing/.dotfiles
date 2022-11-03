@@ -134,10 +134,6 @@ return packer.startup(function(use)
   }
 
   use {
-    "williamboman/nvim-lsp-installer",
-  }
-
-  use {
     'phaazon/hop.nvim',
     branch = 'v2', -- optional but strongly recommended
     config = function()

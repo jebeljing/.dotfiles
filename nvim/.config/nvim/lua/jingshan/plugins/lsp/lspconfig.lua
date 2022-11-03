@@ -20,6 +20,9 @@ local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
+  -- Enable completion triggered by <c-x><c-o>
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -56,20 +59,35 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+local lsp_flags = {
+  -- This is the default in Nvim 0.7+
+  debounce_text_changes = 150,
+}
+
 -- configure typescript server with plugin
 typescript.setup({
 	server = {
 		capabilities = capabilities,
 		on_attach = on_attach,
+    flags = lsp_flags,
 	},
 })
 
-lspconfig.pyright.setup{
+lspconfig.pyright.setup({
   on_attach = on_attach,
   capabilities = capabilities
-}
+  flags = lsp_flags,
+})
 
-lspconfig.solargraph.setup{
+lspconfig.solargraph.setup({
   on_attach = on_attach,
   capabilities = capabilities
+  flags = lsp_flags,
+})
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.jsonls.setup {
+  capabilities = capabilities,
 }
