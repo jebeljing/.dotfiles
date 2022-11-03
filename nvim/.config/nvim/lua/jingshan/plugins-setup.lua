@@ -169,6 +169,10 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    'vim-test/vim-test'
+  }
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
