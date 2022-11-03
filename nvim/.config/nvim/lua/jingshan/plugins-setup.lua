@@ -51,7 +51,7 @@ return packer.startup(function(use)
 	use({
     "nvim-tree/nvim-tree.lua",
     requires = {
-      'kyazdani42/nvim-web-devicons',
+      "kyazdani42/nvim-web-devicons",
     },
   })
 
@@ -61,26 +61,26 @@ return packer.startup(function(use)
 	-- statusline
 	use({
     "nvim-lualine/lualine.nvim",
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { "kyazdani42/nvim-web-devicons", opt = true }
   })
 
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({
     "nvim-telescope/telescope.nvim",
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {"nvim-lua/plenary.nvim"} }
   }) -- fuzzy finder
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
-  use { 'hrsh7th/cmp-cmdline' }
+  use { "hrsh7th/cmp-cmdline" }
 
 	-- snippets
-  use { 'hrsh7th/cmp-vsnip' }
-  use { 'hrsh7th/vim-vsnip' }
-  use { 'hrsh7th/vim-vsnip-integ' }
+  use { "hrsh7th/cmp-vsnip" }
+  use { "hrsh7th/vim-vsnip" }
+  use { "hrsh7th/vim-vsnip-integ" }
 
 	use("rafamadriz/friendly-snippets") -- useful snippets
 
@@ -104,9 +104,9 @@ return packer.startup(function(use)
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
-    run = ':TSUpdate'
+    run = ":TSUpdate"
 	})
-  use 'nvim-treesitter/nvim-treesitter-context'
+  use "nvim-treesitter/nvim-treesitter-context"
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
@@ -116,23 +116,23 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
   use {
-    'karb94/neoscroll.nvim',
+    "karb94/neoscroll.nvim",
     config = function()
-      require('neoscroll').setup()
+      require("neoscroll").setup()
     end
   }
 
-  use({ 'kdheepak/lazygit.nvim' })
+  use({ "kdheepak/lazygit.nvim" })
 
   use({
-    'akinsho/bufferline.nvim',
-    tag = 'v2.*',
-    requires = 'kyazdani42/nvim-web-devicons'
+    "akinsho/bufferline.nvim",
+    tag = "v2.*",
+    requires = "kyazdani42/nvim-web-devicons"
   })
 
   -- blankline
   use({
-    'lukas-reineke/indent-blankline.nvim',
+    "lukas-reineke/indent-blankline.nvim",
   })
 
   use {
@@ -147,15 +147,15 @@ return packer.startup(function(use)
   }
 
   use {
-    'phaazon/hop.nvim',
-    branch = 'v2', -- optional but strongly recommended
+    "phaazon/hop.nvim",
+    branch = "v2", -- optional but strongly recommended
     config = function()
       -- you can configure Hop the way you like here; see :h hop-config
-      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      require"hop".setup { keys = "etovxqpdygfblzhckisuran" }
     end
   }
 
-  use { 'chentoast/marks.nvim' }
+  use { "chentoast/marks.nvim" }
 
   use {
     "folke/trouble.nvim",
@@ -170,8 +170,11 @@ return packer.startup(function(use)
   }
 
   use {
-    'vim-test/vim-test'
+    "vim-test/vim-test"
   }
+
+  use { "tpope/vim-rake" }
+  use { "tpope/vim-projectionist" }
 
 	if packer_bootstrap then
 		require("packer").sync()
