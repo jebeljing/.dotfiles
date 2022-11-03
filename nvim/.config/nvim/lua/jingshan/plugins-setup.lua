@@ -48,17 +48,28 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
+	use({
+    "nvim-tree/nvim-tree.lua",
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+  })
 
 	-- vs-code like icons
 	use("kyazdani42/nvim-web-devicons")
 
 	-- statusline
-	use("nvim-lualine/lualine.nvim")
+	use({
+    "nvim-lualine/lualine.nvim",
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  })
 
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+	use({
+    "nvim-telescope/telescope.nvim",
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }) -- fuzzy finder
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
@@ -83,15 +94,16 @@ return packer.startup(function(use)
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
 
 	-- formatting & linting
-	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+	use({
+    "jose-elias-alvarez/null-ls.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+  }) -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		run = function()
-			require("nvim-treesitter.install").update({ with_sync = true })
-		end,
+    run = ':TSUpdate'
 	})
   use 'nvim-treesitter/nvim-treesitter-context'
 
