@@ -43,8 +43,8 @@ keymap.set("i", "<right>", "<nop>")
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
--- keymap.set('n', '<leader>n', '<cmd>NvimTreeFindFileToggle<cr>')
+keymap.set('n', '<leader>e', '<cmd>NvimTreeFindFileToggle<cr>')
+-- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- keymap.set('n', '<leader>m', '<cmd>NvimTreeFindFile<cr>')
 
 -- telescope
@@ -78,3 +78,11 @@ keymap.set('', 't', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.
 keymap.set('', 'T', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>")
 keymap.set('', '<leader>hw', ":HopWord<CR>")
 keymap.set('', '<leader>hl', ":HopLine<CR>")
+
+-- trouble nvim
+keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>")
+keymap.set("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>")
+keymap.set("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>")
+keymap.set("n", "<leader>xl", "<cmd>Trouble loclist<cr>")
+keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix<cr>")
+keymap.set("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>")

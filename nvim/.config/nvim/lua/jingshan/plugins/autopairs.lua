@@ -26,5 +26,7 @@ if not cmp_setup then
 	return
 end
 
+autopairs.add_rules(require("nvim-autopairs.rules.endwise-ruby"))
+
 -- make autopairs and completion work together
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
