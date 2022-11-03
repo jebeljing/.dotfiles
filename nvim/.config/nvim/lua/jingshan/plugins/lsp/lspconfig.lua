@@ -75,13 +75,13 @@ typescript.setup({
 
 lspconfig.pyright.setup({
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
   flags = lsp_flags,
 })
 
 lspconfig.solargraph.setup({
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
   flags = lsp_flags,
 })
 

@@ -21,9 +21,9 @@ null_ls.setup({
 			end,
 		}),
 
-    nls.builtins.hover.dictionary,
+    null_ls.builtins.hover.dictionary,
     formatting.eslint_d,
-    nls.builtins.code_actions.eslint_d,
+    null_ls.builtins.code_actions.eslint_d,
     -- diagnostics.cfn_lint,
     -- diagnostics.fish,
     -- diagnostics.golangci_lint,
