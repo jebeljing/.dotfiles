@@ -53,6 +53,12 @@ brew install --cask rectangle
 # install bartender
 brew install --cask bartender
 
+# install meetingbar
+brew install --cask meetingbar
+
+# install stats
+brew install --cask stats
+
 # install lazygit
 brew install jesseduffield/lazygit/lazygit
 
