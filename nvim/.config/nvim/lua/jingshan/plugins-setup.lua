@@ -176,6 +176,13 @@ return packer.startup(function(use)
   use { "tpope/vim-rake" }
   use { "tpope/vim-projectionist" }
 
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  }
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

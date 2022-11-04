@@ -16,10 +16,10 @@ opt.wrap = false -- disable line wrapping
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
-opt.hlsearch=true
-opt.incsearch=true
+opt.hlsearch = true
+opt.incsearch = true
 --opt.linespace=1
-opt.colorcolumn="120"
+opt.colorcolumn = "120"
 
 -- cursor line
 opt.cursorline = true -- highlight the current cursor line
@@ -44,11 +44,15 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
 
-opt.showcmd=true
-opt.ruler=true
+opt.showcmd = true
+opt.ruler = true
 
-opt.autoread=true
+opt.autoread = true
 
 opt.timeoutlen = 500
 
-opt.hidden=true
+opt.hidden = true
+
+opt.swapfile = false
+
+opt.scrolloff = 8
