@@ -7,11 +7,15 @@ opt.number = true -- shows absolute line number on cursor line (when relative nu
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
+opt.softtabstop = 2
 opt.expandtab = true -- expand tab to spaces
+opt.shiftround = false
+opt.smarttab = true
 opt.autoindent = true -- copy indent from current line when starting new one
+opt.smartindent = true
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -43,6 +47,7 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
+-- opt.iskeyword:append("?") -- consider string-string as whole word
 
 opt.showcmd = true
 opt.ruler = true
