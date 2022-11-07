@@ -54,6 +54,7 @@ windows:
   - infra:
   - approval_service:
     - aps
+    - pipenv shell
     - vi
   - vimrc:
     - vimrc
