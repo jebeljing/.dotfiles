@@ -7,10 +7,14 @@ end
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
 local diagnostics = null_ls.builtins.diagnostics -- to setup linters
+local code_actions = null_ls.builtins.code_actions
+local hover = null_ls.builtins.hover
 
 null_ls.setup({
   debug = false,
   sources = {
+    hover.dictionary,
+    formatting.eslint_d,
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
@@ -20,10 +24,7 @@ null_ls.setup({
 				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
 			end,
 		}),
-
-    null_ls.builtins.hover.dictionary,
-    formatting.eslint_d,
-    null_ls.builtins.code_actions.eslint_d,
+    code_actions.eslint_d,
     -- diagnostics.cfn_lint,
     -- diagnostics.fish,
     -- diagnostics.golangci_lint,
