@@ -93,3 +93,6 @@ keymap.set("n", "<Leader>tn", ":TestNearest<CR>")
 keymap.set("n", "<Leader>tf", ":TestFile<CR>")
 keymap.set("n", "<Leader>tl", ":TestLast<CR>")
 keymap.set("n", "<Leader>tg", ":TestVisit<CR>")
+
+-- toggle-term
+-- keymap.set("n", "<Leader>tt", ":ToggleTerm direction=float<CR>")

@@ -15,7 +15,7 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.smartindent = true
 
 -- line wrapping
-opt.wrap = true -- disable line wrapping
+opt.wrap = false -- disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -60,4 +60,4 @@ opt.hidden = true
 
 opt.swapfile = false
 
-opt.scrolloff = 8
+opt.scrolloff = 3
