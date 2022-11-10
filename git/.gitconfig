@@ -3,3 +3,5 @@
 	name = jingshanyin
 [core]
 	excludesfile = /Users/jingshan.yin/.gitignore_global
+[rebase]
+	autoStash = true
