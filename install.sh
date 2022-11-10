@@ -22,7 +22,10 @@ brew install \
 brew install tmuxinator
 
 # install iterm2
-brew install --cask iterm2
+# brew install --cask iterm2
+
+# install kitty terminal so much faster than iterm2
+brew install --cask kitty
 
 # install alfred
 brew install --cask alfred
