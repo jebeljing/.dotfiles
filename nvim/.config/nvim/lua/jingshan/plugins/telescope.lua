@@ -29,6 +29,9 @@ telescope.setup({
       show_all_buffers = true,
       sort_lastused = true,
       theme = "dropdown",
+      layout_config = {
+        width = 0.5,
+      },
       previewer = false,
       mappings = {
         i = {
