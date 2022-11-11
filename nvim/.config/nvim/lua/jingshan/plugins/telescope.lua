@@ -19,11 +19,27 @@ telescope.setup({
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
 				["<C-j>"] = actions.move_selection_next, -- move to next result
         ["<C-h>"] = "which_key",
-        ["<C-u>"] = false
+        ["<C-u>"] = false,
 				-- ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
 			},
 		},
 	},
+  pickers = {
+    buffers = {
+      show_all_buffers = true,
+      sort_lastused = true,
+      theme = "dropdown",
+      previewer = false,
+      mappings = {
+        i = {
+          ["<c-d>"] = "delete_buffer",
+        },
+        n = {
+          ["d"] = "delete_buffer"
+        }
+      }
+    }
+  }
 })
 
 telescope.load_extension("fzf")
