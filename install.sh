@@ -30,6 +30,9 @@ brew install --cask kitty
 # install alfred
 brew install --cask alfred
 
+# install raycast 
+brew install --cask raycast
+
 # install AltTab
 brew install --cask alt-tab
 
