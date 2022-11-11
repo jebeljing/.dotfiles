@@ -30,7 +30,8 @@ telescope.setup({
       sort_lastused = true,
       theme = "dropdown",
       layout_config = {
-        width = 0.5,
+        width = 0.4,
+        height = 0.3,
       },
       previewer = false,
       mappings = {
