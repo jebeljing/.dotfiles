@@ -1,6 +1,8 @@
 # install homobrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+xcode-select --install
+
 # install packages
 #brew install zsh # Don't need since new macOs all use zsh by default now
 brew install \
@@ -16,10 +18,10 @@ brew install \
   direnv \
   tree \
   node \
-  openssh
+  openssh \
+  tmuxinator
 
 # install tmuxinator
-brew install tmuxinator
 
 # install iterm2
 # brew install --cask iterm2
@@ -28,7 +30,7 @@ brew install tmuxinator
 brew install --cask kitty
 
 # install alfred
-brew install --cask alfred
+# brew install --cask alfred
 
 # install raycast 
 brew install --cask raycast
@@ -74,7 +76,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Remove the .zshrc from oh-my-zsh
 rm ~/.zshrc
 
+# install the font below
+# https://github.com/JJGO/macOS-setup/blob/master/mac-ansible/files/fonts/MesloLGS%20NF/MesloLGS%20NF%20Regular.ttf
 
+# brew --prefix
 /opt/homebrew/opt/fzf/install
 set rtp+=/opt/homebrew/opt/fzf
 
@@ -84,6 +89,9 @@ stow nvim
 stow tmux
 stow git
 stow p10k
+stow tmuxinator
+stow kitty
+stow git
 
 # add zsh to valid login shells
 #command -v zsh | sudo tee -a /etc/shells # Don't need this since zsh already in the list
