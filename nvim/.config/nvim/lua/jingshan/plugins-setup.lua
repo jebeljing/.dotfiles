@@ -187,6 +187,10 @@ return packer.startup(function(use)
     "akinsho/toggleterm.nvim", tag = '*'
   }
 
+  use {
+    "martinda/Jenkinsfile-vim-syntax"
+  }
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
