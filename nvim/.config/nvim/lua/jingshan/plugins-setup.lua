@@ -191,6 +191,10 @@ return packer.startup(function(use)
     "martinda/Jenkinsfile-vim-syntax"
   }
 
+  use {
+    "xiyaowong/nvim-transparent"
+  }
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
