@@ -194,6 +194,9 @@ return packer.startup(function(use)
   use {
     "xiyaowong/nvim-transparent"
   }
+  -- Is using a standard Neovim install, i.e. built from source or using a
+  -- provided appimage.
+  use 'lewis6991/impatient.nvim'
 
 	if packer_bootstrap then
 		require("packer").sync()
