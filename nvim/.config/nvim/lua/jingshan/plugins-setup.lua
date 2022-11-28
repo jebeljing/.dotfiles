@@ -191,6 +191,10 @@ return packer.startup(function(use)
   use {
     "xiyaowong/nvim-transparent"
   }
+
+  use {
+    "tpope/vim-fugitive"
+  }
   -- Is using a standard Neovim install, i.e. built from source or using a
   -- provided appimage.
   use 'lewis6991/impatient.nvim'

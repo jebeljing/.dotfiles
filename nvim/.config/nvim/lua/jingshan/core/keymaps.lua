@@ -96,3 +96,6 @@ keymap.set("n", "<Leader>tg", ":TestVisit<CR>")
 
 -- toggle-term
 -- keymap.set("n", "<Leader>tt", ":ToggleTerm direction=float<CR>")
+
+-- Transparent
+keymap.set("n", "<Leader>tr", ":TransparentToggle<CR>")

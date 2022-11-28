@@ -85,6 +85,12 @@ lspconfig.solargraph.setup({
   flags = lsp_flags,
 })
 
+lspconfig.sorbet.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  flags = lsp_flags,
+})
+
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
