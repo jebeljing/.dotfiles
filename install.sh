@@ -109,3 +109,6 @@ npm install -g typescript typescript-language-server
 
 # install pyright
 npm install -g pyright
+
+# install sorbet lsp
+gem install sorbet
