@@ -67,6 +67,12 @@ brew install --cask meetingbar
 # install stats
 brew install --cask stats
 
+# install cleanmymac
+brew install --cask cleanmymac
+
+# install on appstore for zClock Lite
+
+
 # install lazygit
 brew install jesseduffield/lazygit/lazygit
 
